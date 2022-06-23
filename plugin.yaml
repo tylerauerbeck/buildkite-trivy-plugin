@@ -1,0 +1,28 @@
+name: trivy scanner
+description: allows for vulnerability scanning using trivy
+author:	https://github.com/equinixmetal-buildkite/trivy-buildkite-plugin
+requirements:
+  - docker
+configuration:
+  properties:
+    trivy_image:
+      type: string
+    trivy_version:
+      type: string
+    target_image:
+      type: string
+    format:
+      type: string
+    scan_type:
+      type: string
+    path:
+      type: string
+    debug:
+      type: string
+    mount
+      type: string
+    severity:
+      type: string
+    vuln_type:
+      type: string
+additionalProperties: false
